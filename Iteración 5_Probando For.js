@@ -14,3 +14,14 @@ for (let i = 0; i < placesToTravel.length; i++) {
 }
 
 console.log(placesToTravelFilter);
+
+
+//Metodo más sencillo aplicando un .filter()
+
+const placesToTravel = [{id: 5, name: 'Japan'}, {id: 11, name: 'Venecia'}, {id: 23, name: 'Murcia'}, {id: 40, name: 'Santander'}, {id: 44, name: 'Filipinas'}, {id: 59, name: 'Madagascar'}];
+
+const lugaresFiltrados = placesToTravel.filter( lugares => {
+  return lugares.id !== 11 && lugares.id !== 40;
+})
+
+console.log(lugaresFiltrados);
